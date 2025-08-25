@@ -1,4 +1,4 @@
-// src/components/Statistics.js
+
 import React, { useState } from 'react';
 import {
   Box,

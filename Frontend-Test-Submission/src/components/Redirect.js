@@ -1,4 +1,4 @@
-// src/components/Redirect.js
+
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { StorageService } from "../services/StorageService";
@@ -16,7 +16,7 @@ const Redirect = () => {
       const now = new Date();
 
       if (new Date(urlData.expiresAt) > now) {
-        // Track the click
+        
         const clickData = {
           timestamp: now.toISOString(),
           userAgent: navigator.userAgent,

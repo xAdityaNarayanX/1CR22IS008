@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import URLShortener from "./components/URLShortener";
