@@ -1,18 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import App from './App';
-import RedirectHandler from './components/RedirectHandler';
-import './index.css';
+// src/index.js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
+import Redirect from "./components/Redirect";  // ✅ use Redirect, not RedirectHandler
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter>
       <Routes>
+        {/* Home Page */}
         <Route path="/" element={<App />} />
-        <Route path="/:shortCode" element={<RedirectHandler />} />
+
+        {/* Redirect handler for short URLs */}
+        <Route path="/:shortCode" element={<Redirect />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>
 );

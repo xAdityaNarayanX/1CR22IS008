@@ -1,5 +1,3 @@
-// src/services/StorageService.js
-// Service for handling client-side storage
 export const StorageService = {
   getURLs: () => {
     try {
@@ -10,7 +8,7 @@ export const StorageService = {
       return [];
     }
   },
-  
+
   saveURLs: (urls) => {
     try {
       localStorage.setItem('shortenedUrls', JSON.stringify(urls));
@@ -18,9 +16,7 @@ export const StorageService = {
       console.error('Error saving URLs to storage:', error);
     }
   },
-  
-  // For demo purposes, we'll also store click data in localStorage
-  // In a real application, this would be handled by a backend
+
   trackClick: (shortCode, clickData) => {
     try {
       const urls = StorageService.getURLs();
@@ -34,7 +30,7 @@ export const StorageService = {
         }
         return url;
       });
-      
+
       StorageService.saveURLs(updatedUrls);
     } catch (error) {
       console.error('Error tracking click:', error);
