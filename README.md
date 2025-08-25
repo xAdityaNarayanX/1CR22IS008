@@ -46,6 +46,11 @@ src/
  ├── App.js                # Main app routing
  └── index.js              # React entry point
 
+📍 URL Shortener Form
+ <img width="1897" height="540" alt="Screenshot 2025-08-26 000433" src="https://github.com/user-attachments/assets/4e5963fa-8068-41e5-9ff8-c965208ecd0a" />
+📍 Statistics Page
+<img width="1444" height="840" alt="Screenshot 2025-08-26 001044" src="https://github.com/user-attachments/assets/0fc3e855-da5d-42d5-b2ea-cbc69a3b6e7a" />
+
 🚀 Getting Started
 1. Clone the repository
 git clone https://github.com/xAdityaNarayanX/1CR22IS008.git
